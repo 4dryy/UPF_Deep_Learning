@@ -1,1 +1,1 @@
-# DL_Final_Project
+# DL Final Project: Multiclass Yoga Pose Recognition
