@@ -82,28 +82,33 @@ The project follows a complete and modular pipeline:
 
 ## 🧠 Best Architectures
 
-After extensive experimentation, the two best models are:
+After a full evaluation of over 20 pretrained and custom CNN configurations, the top-performing models are:
 
-- 🏆 **ConvNeXt-Tiny**  
-  - Highest test accuracy and F1-score  
-  - Best generalization and training stability  
+- 🏆 **ConvNeXt-Tiny (FT_C6)**  
+  - **Highest test accuracy: 93.48%**, F1-score: 0.93  
+  - Excellent training stability and generalization  
+  - Ideal for high-accuracy applications with moderate resource availability
 
-- ⚖️ **ResNet34**  
-  - Slightly lower accuracy but smaller and faster  
-  - Classic architecture with robust results  
+- ⚖️ **ResNet34 (FT_R6)**  
+  - Strong accuracy (87.92%) and F1-score (0.87)  
+  - Lower inference time (0.00074 s/img) with robust results  
+  - Best trade-off between speed, size, and performance among ResNets
 
-🎖️ **Honorable Mention**: **EfficientNet-B1**  
-Achieved competitive performance (86.23% accuracy) with only 6.6M parameters — ideal for resource-constrained environments.
+🎖️ **Honorable Mentions**:
+- **EfficientNet-B1** – 86.23% accuracy with only 6.6M parameters  
+- **MobileNetV2** – 82.61% accuracy, extremely lightweight (2.28M params), and fast (0.00040 s/img)
 
 ---
 
 ## 📊 Final Results Summary
 
-| Model           | Test Accuracy | F1-Score | Parameters | Inference Time |
-|----------------|---------------|----------|------------|----------------|
-| ConvNeXt-Tiny  | **89.37%**    | **0.89** | 27.9M      | 0.00057 s/img  |
-| ResNet34       | 87.44%        | 0.87     | 21.3M      | 0.00029 s/img  |
-| EfficientNet-B1| 86.23%        | 0.86     | **6.6M**    | 0.00098 s/img  |
+| Model              | Test Accuracy | F1-Score | Parameters | Inference Time |
+|-------------------|---------------|----------|------------|----------------|
+| ConvNeXt-Tiny      | **93.48%**    | **0.93** | 27.9M      | 0.00040 s/img  |
+| ResNet34 (FT_R6)   | 87.92%        | 0.87     | 21.3M      | 0.00074 s/img  |
+| EfficientNet-B1    | 86.23%        | 0.86     | **6.6M**   | 0.00098 s/img  |
+| MobileNetV2        | 82.61%        | 0.83     | 2.28M      | **0.00040 s/img** |
+| ShuffleNet V2      | 44.93%        | 0.40     | **1.3M**   | 0.00060 s/img  |
 
 ---
 
