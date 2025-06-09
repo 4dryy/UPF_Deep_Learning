@@ -30,7 +30,7 @@ Due to GitHub’s size constraints, the full dataset (~500MB) is hosted on Googl
 
 All trained model weights and evaluation results (~500MB) are also hosted externally.
 
-📥 **[Download Yoga Pose Model Results (Google Drive)](INSERT_RESULTS_LINK_HERE)**  
+📥 **[Download Yoga Pose Model Results (Google Drive)](https://drive.google.com/drive/folders/15a2QuPL4ylWzYovGuqFvU_sHW7a8u4em?usp=drive_link)**  
 ↳ *(Link to be updated once available)*
 
 ---
